@@ -56,10 +56,10 @@ class DITAValidatorSub(DITAValidator_UI.SimpleFrame):
         catalogpath = self.text_ctrlCatalog.GetValue()
         if not catalogpath[1:3] == ":\\":
             if os.name == "nt":
-                if os.path.exists("c:\\Program Files\\VMware\\DITAValidator"):
-                    progpath = "c:\\Program Files\\VMware\\DITAValidator"
+                if os.path.exists("c:\\Program Files\\Example\\DITAValidator"):
+                    progpath = "c:\\Program Files\\Example\\DITAValidator"
                 else:
-                    progpath = "c:\\Program Files (x86)\\VMware\\DITAValidator"                    
+                    progpath = "c:\\Program Files (x86)\\Example\\DITAValidator"                    
                 os.chdir(progpath)
             if os.path.exists(os.path.join(os.getcwd(), catalogpath)):
                 catalogpath = os.path.join(os.getcwd(), catalogpath)
@@ -99,7 +99,7 @@ class DITAValidatorSub(DITAValidator_UI.SimpleFrame):
         event.Skip()
         
     def OnHelp(self, event): # wxGlade: SimpleFrame.<event_handler>
-        self.text_ctrlMessageReport.AppendText(os.linesep + os.linesep + "No help available.  Contact ditasupport@vmware.com.")
+        self.text_ctrlMessageReport.AppendText(os.linesep + os.linesep + "No help available.  Contact <ditasupport@example.com>.")
         event.Skip()
 
     def OnExit(self, event): # wxGlade: SimpleFrame.<event_handler>
