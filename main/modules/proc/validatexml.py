@@ -224,7 +224,7 @@ class clsValidateXML(ditaproc.processEngineClass):
         
         
 
-        #########BEGIN VMware CMS Specific Code - Not needed for normal validation#########
+        #########BEGIN Company CMS Specific Code - Not needed for normal validation#########
         #########Normally, just make sure all conrefs resolve properly on a filesystem#########
         #check to see if we have a CMS file
         sIODoc = False
@@ -233,7 +233,7 @@ class clsValidateXML(ditaproc.processEngineClass):
             #For each conref element, pull the target innerxml in as the current object to replace the node's innerxml.
             sIODoc = self._ResolveAllConrefs(pathtofile) #creates a StringIO returnstring (XML) that can can be parsed as XML.
 
-        #########END VMware CMS Specific Code#########
+        #########END Company CMS Specific Code#########
         
         
         
