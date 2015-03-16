@@ -1,0 +1,1 @@
+Given an initial ditamap or folder, the tool traverses all the links, reuse, etc. looking for issues and then validates all the found XML files against DTDs based on catalog definitions.
